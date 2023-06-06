@@ -24,7 +24,7 @@ class _ListPariwisataScreenState extends State<ListPariwisataScreen> {
           return InkWell(
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return DetailPariwisataScreen();
+                return DetailPariwisataScreen(place: place,);
               }));
             },
             child: Card(
